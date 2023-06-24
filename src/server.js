@@ -1,5 +1,8 @@
 const express = require('express')
 const morgan = require('morgan')
+const path = require('path')
+
+const indexRouter =  require('./routes/index')
 
 const app = express()
 
@@ -10,9 +13,11 @@ app.set('port', 7000)
 // middleware
 app.use(morgan('dev'))
 
-app.get('/', (req, res) => {
-  res.send('Hello World')
-})
+// Routing
+app.use(indexRouter)
+
+app.use('/static', express.static(path.join(__dirname, '/static')))
+
 
 app.listen(7000, () => {
   console.log(`Server ${app.get('serverName')} started on port ${app.get('port')}`)
