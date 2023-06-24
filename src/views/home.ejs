@@ -1,12 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Supra</title>
-  <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
-  <h1>Home Page</h1>
-</body>
-</html>
+<%- include('./partials/head.ejs') %>
+  <%- include('./partials/header.ejs') %>
+    <main class="main">
+      <h2 class="main__title">SUPRA - Historia de los deportivos Toyota</h2>
+      <p class="main__cite">Supra, palabra latina que significa “trascendente” o “por encima”, resultaría ser un apodo
+        particularmente adecuado para el que fuera quizás el deportivo más famoso de Toyota.</p>
+      <div class="main__content">
+        <h3 class="main__subtitle">La ascensión del Supra</h3>
+        <p class="main__text">
+          El Supra dio en realidad sus primeros pasos en el mercado japonés como Celica XX (Celica Supra en otros
+          mercados) en 1978. Se trataba de una variante más larga, ancha y potente del Celica, con un afinado motor de
+          seis cilindros y un porte más lujoso, perfecto para el floreciente mercado de los turismos en Norteamérica.
+
+          <br><br>
+
+          En 1982, el Supra llegó a Europa con una imagen totalmente nueva basada en la tercera generación del
+          plataforma del Celica. Con sus prominentes y agresivos pasos de las ruedas y sus espectaculares faros
+          frontales elevables, además de un indefectible potente motor, el Supra atraía las miradas y encajaba a la
+          perfección con el diseño y la cultura de los ochenta.
+        </p>
+        <div class="grid__container">
+          <img class="grid__item grid--one" src="https://scene7.toyota.eu/is/image/toyotaeurope/historia-deportivos-toyota-1?qlt=80&wid=1280&fit=fit,1&ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="auto toyota supra">
+          <img class="grid__item grid--two" src="https://scene7.toyota.eu/is/image/toyotaeurope/aleron-toyota-supra?qlt=80&wid=1280&fit=fit,1&ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="auto toyota supra">
+          <img class="grid__item grid--three" src="https://scene7.toyota.eu/is/image/toyotaeurope/interior-toyota-supra?qlt=80&wid=1280&fit=fit,1&ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="auto toyota supra">
+          <img class="grid__item grid--four" src="https://scene7.toyota.eu/is/image/toyotaeurope/Diseno-exterior-toyota-supra?qlt=80&wid=1280&fit=fit,1&ts=0&resMode=sharp2&op_usm=1.75,0.3,2,0" alt="auto toyota supra">
+          <!-- <div class="grid__item grid--one"></div>
+          <div class="grid__item grid--two"></div>
+          <div class="grid__item grid--three"></div>
+          <div class="grid__item grid--four"></div> -->
+        </div>
+        <p class="main__text">
+          La esperadísima cuarta generación del Supra, aparecida en 1993 con un largo capó y unas líneas muy fluidas,
+          debía mucho a las raíces del 2000GT. El uso de materiales ligeros —incluso las fibras de las alfombras eran
+          huecas para reducir la masa— ayudó a los ingenieros a recortar el peso 100 kg en comparación con su
+          predecesor. Al añadir a la mezcla el potente motor de 3 litros con doble turbocompresor del Supra, el
+          resultado era explosivo; el recién llegado japonés llegaría a quitar el sueño a fabricantes de supercoches
+          italianos y alemanes.
+
+          <br><br>
+
+          Además de cosechar muchos éxitos automovilísticos entre 1995 y 2003, incluida la participación en las
+          emblemáticas 24 Horas de Le Mans, el vertiginoso ascenso al Pikes Peak y un gran número de campeonatos
+          nacionales e internacionales, el Supra se has ganado un lugar en la leyenda entre los fans de Toyota, y entre
+          los aficionados a la personalización de vehículos y al mundo del motor en general en todo el mundo.
+
+          <br><br>
+
+          Las tendencias a escala mundial llevaron al cese de la producción del Supra en 2003, pero habrá mucha gente en
+          todo el planeta con la esperanza de que el espíritu del Supra reviva en un futuro no muy lejano.
+        </p>
+      </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
