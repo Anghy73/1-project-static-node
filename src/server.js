@@ -9,6 +9,9 @@ const app = express()
 // settings
 app.set('serverName', 'Static')
 app.set('port', 7000)
+app.set('view engine', 'ejs')
+app.set('views', path.join(__dirname, '/views'))
+
 
 // middleware
 app.use(morgan('dev'))
