@@ -194,6 +194,7 @@ body {
 /* Grid Template */
 
 .main__models {
+  margin-top: 3rem;
   font-size: 2rem;
   font-weight: 500;
 }
@@ -201,7 +202,7 @@ body {
 .grid__template {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
-  gap: 5rem;
+  gap: 5rem 3rem;
   width: 100%;
   margin-top: 5rem;
 }
@@ -215,9 +216,9 @@ body {
 
 .template__item img {
   width: 100%;
-  height: auto;
+  height: 40%;
   margin-bottom: 2rem;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .template__item h3 {
@@ -242,6 +243,7 @@ body {
   background-color: transparent;
   border: 1px solid var(--secundary-color);
   color: var(--white-color);
+  font-size: 1.6rem;
   cursor: pointer;
 }
 
